@@ -1,0 +1,111 @@
+labels
+syntax: !<LABEL>
+description: Labels are used to identify targets for branching commands.
+
+mov
+syntax: mov <src> <dst>
+description: <src: value or memory address>is read then written to <dst: memory address>
+
+jmp
+syntax: jmp <label>
+description: 
+
+jsr jsr <label>
+syntax:
+description: 
+
+rsr
+syntax: rsr
+description: 
+
+nop
+syntax: nop
+description: 
+
+add
+syntax: add <src> <src> <dst>
+description: 
+
+sub 
+syntax: sub <src> <src> <dst>
+description: 
+
+mul
+syntax: mul <src> <src> <dst>
+description: 
+
+div
+syntax: div <src> <src> <dst>
+description: 
+
+mod
+syntax: mod <src> <src> <dst>
+description: 
+
+and
+syntax: and <src> <src> <dst>
+description: 
+
+or
+syntax: or <src> <src> <dst>
+description: 
+
+xor
+syntax: xor <src> <src> <dst>
+description: 
+
+not
+syntax: not <src> 
+description: 
+
+psh 
+syntax: psh <adr> <value>
+description: 
+
+pul 
+syntax: pul <dst>
+description: 
+
+clk
+syntax: clk
+description: 
+
+och
+syntax: och <src>
+description: 
+
+olf
+syntax: olf
+description: 
+
+omv
+syntax: omv
+description: 
+
+onm
+syntax: onm <src>
+description: 
+
+cmp
+syntax: cmp <src>
+description: 
+
+bjp 
+syntax: bjp <mask> <true/false> <label>
+description: 
+
+jez 
+syntax: jez <label>
+description: 
+
+jnz
+syntax: jnz <label>
+description: 
+
+jgz
+syntax: jgz <label>
+description: 
+
+jlz
+syntax: jlz <label>
+description: 
