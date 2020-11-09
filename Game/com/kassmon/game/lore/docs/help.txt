@@ -8,62 +8,62 @@ description: <src: value or memory address>is read then written to <dst: memory 
 
 jmp
 syntax: jmp <label>
-description: 
+description: jumps to a <label> and continue running the program from there
 
-jsr jsr <label>
-syntax:
-description: 
+jsr 
+syntax: jsr <label>
+description: jumps to the start label of a subroutine
 
 rsr
 syntax: rsr
-description: 
+description: returns form a subroutine to where the subroutine was called
 
 nop
 syntax: nop
-description: 
+description: a command that lets time pass
 
 add
 syntax: add <src> <src> <dst>
-description: 
+description: add two numbers<src> and stores it in <dst>
 
 sub 
 syntax: sub <src> <src> <dst>
-description: 
+description: subtract two numbers<src> and stores it in <dst>
 
 mul
 syntax: mul <src> <src> <dst>
-description: 
+description: multply two numbers<src> and stores it in <dst>
 
 div
 syntax: div <src> <src> <dst>
-description: 
+description: divide two numbers<src> and stores it in <dst>
 
 mod
 syntax: mod <src> <src> <dst>
-description: 
+description: divide two numbers<src> and stores the remainder in <dst>
 
 and
 syntax: and <src> <src> <dst>
-description: 
+description: logical bitwise and two numbers<src> and stores it in <dst>
 
 or
 syntax: or <src> <src> <dst>
-description: 
+description: logical bitwise or two numbers<src> and stores it in <dst>
 
 xor
 syntax: xor <src> <src> <dst>
-description: 
+description: logical bitwise xor two numbers<src> and stores it in <dst>
 
 not
 syntax: not <src> 
-description: 
+description: logical bitwise not number<src> and stores it in <src>
 
 psh 
 syntax: psh <adr> <value>
-description: 
+description: sends <value> to the bus address<adr>
 
 pul 
-syntax: pul <dst>
+syntax: pul <adr> <dst>
 description: 
 
 clk

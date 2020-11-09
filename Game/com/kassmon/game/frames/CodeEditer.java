@@ -19,15 +19,23 @@ public class CodeEditer extends JInternalFrame {
 		
 		this.text = new JTextArea();
 		this.pane = new JScrollPane(this.text);
-		
 		this.pane.setBounds(10, 10, super.getWidth() - 10, super.getHeight() - 10);
+		
+		add(pane);
+		setResizable(true);
+		setClosable(true);
 		
 		this.setSize(width, height);
 		this.repaint();
+		
 	}
 	
 	public String getText() {
 		return this.text.getText();
+	}
+	
+	public void setText(String text) {
+		this.text.setText(text);
 	}
 	
 	private void resize() {
@@ -37,9 +45,8 @@ public class CodeEditer extends JInternalFrame {
 	
 	class ResizeListener extends ComponentAdapter {
         public void componentResized(ComponentEvent e) {
-            // Recalculate the variable you mentioned
-        	resize();
+            resize();
         }
-}
+	}
 	
 }
