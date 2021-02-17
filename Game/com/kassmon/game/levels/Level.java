@@ -1,11 +1,27 @@
 package com.kassmon.game.levels;
 
-import javax.swing.JInternalFrame;
+import java.util.ArrayList;
 
-public interface Level {
-	String getName();
-	String getDescription();
+import com.kassmon.assembly.runTime.RuntimeController;
+
+public abstract class Level {
 	
-	JInternalFrame getCodeEditer();
+	public ArrayList<String> programLineArray(String input) {
+		String[] temp = input.split("\n");
+		ArrayList<String> list = new ArrayList<>();
+		for (String obj: temp) list.add(obj);
+		return list;
+	}
+	
+	public abstract String getName();
+	public abstract String getDescription();
+	
+	public abstract String getProblem();
+	public abstract boolean checkProgram(RuntimeController controller);
+	
+	public abstract String getProgramString();
+	public abstract void setProgramString();
+	
+	
 	
 }

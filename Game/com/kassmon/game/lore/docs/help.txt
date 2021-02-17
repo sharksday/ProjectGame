@@ -23,47 +23,47 @@ syntax: nop
 description: a command that lets time pass
 
 add
-syntax: add <src> <src> <dst>
-description: add two numbers<src> and stores it in <dst>
+syntax: add <src> 
+description: 
 
 sub 
-syntax: sub <src> <src> <dst>
-description: subtract two numbers<src> and stores it in <dst>
+syntax: sub <src>
+description: 
 
 mul
-syntax: mul <src> <src> <dst>
-description: multply two numbers<src> and stores it in <dst>
+syntax: mul <src>
+description: 
 
 div
-syntax: div <src> <src> <dst>
-description: divide two numbers<src> and stores it in <dst>
+syntax: div <src>
+description: 
 
 mod
-syntax: mod <src> <src> <dst>
-description: divide two numbers<src> and stores the remainder in <dst>
+syntax: mod <src>
+description: 
 
 and
-syntax: and <src> <src> <dst>
-description: logical bitwise and two numbers<src> and stores it in <dst>
+syntax: and <src>
+description: 
 
 or
-syntax: or <src> <src> <dst>
-description: logical bitwise or two numbers<src> and stores it in <dst>
+syntax: or <src>
+description: 
 
 xor
-syntax: xor <src> <src> <dst>
-description: logical bitwise xor two numbers<src> and stores it in <dst>
+syntax: xor <src>
+description: 
 
 not
-syntax: not <src> 
-description: logical bitwise not number<src> and stores it in <src>
+syntax: not 
+description: 
 
 psh 
-syntax: psh <adr> <value>
-description: sends <value> to the bus address<adr>
+syntax: psh <value>
+description:
 
 pul 
-syntax: pul <adr> <dst>
+syntax: pul <dst>
 description: 
 
 clk
@@ -78,20 +78,12 @@ olf
 syntax: olf
 description: 
 
-omv
-syntax: omv
-description: 
-
 onm
 syntax: onm <src>
 description: 
 
 cmp
 syntax: cmp <src>
-description: 
-
-bjp 
-syntax: bjp <mask> <true/false> <label>
 description: 
 
 jez 
