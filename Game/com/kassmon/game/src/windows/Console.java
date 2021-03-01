@@ -1,10 +1,11 @@
-package com.kassmon.game.windows;
+package com.kassmon.game.src.windows;
 
 import java.awt.event.*;
 import java.util.regex.Pattern;
 import javax.swing.*;
 import com.kassmon.library.tokenizers.*;
 
+@SuppressWarnings("serial")
 public class Console extends JInternalFrame {
 	
 	//frame items
@@ -17,8 +18,6 @@ public class Console extends JInternalFrame {
 	
 	//Component flags
 	private String mode = "command";
-	private int level = 0;
-	private int project = 0;
 	
 	//constructor and window code
 	public Console (int width, int height) {
@@ -80,23 +79,23 @@ public class Console extends JInternalFrame {
 			Token token = t.getNextToken();
 			if (token.getType().equals("command")) {
 				switch (token.getToken()) {
-					case "help":
-						help();
-					break;
-					case "exit":
-						exit();
-					break;
-					case "clear":
-						clear();
-					break;
-					case "projects":
-						projects();
-					break;
-					case "mode":
-						mode();
-					break;
-					
-				}
+				case "help":
+					help();
+				break;
+				case "exit":
+					exit();
+				break;
+				case "clear":
+					clear();
+				break;
+				case "projects":
+					projects();
+				break;
+				case "mode":
+					mode();
+				break;
+				
+			}
 			}else {
 				addLineToConsoleOutputa("input invalid");
 			}

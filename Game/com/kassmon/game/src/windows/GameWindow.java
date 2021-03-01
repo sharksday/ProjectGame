@@ -1,9 +1,10 @@
-package com.kassmon.game.src;
+package com.kassmon.game.src.windows;
 
 import java.awt.event.*;
 import javax.swing.*;
 
-import com.kassmon.game.windows.*;
+
+
 
 @SuppressWarnings("serial")
 public class GameWindow extends JFrame implements WindowListener{
@@ -65,12 +66,12 @@ public class GameWindow extends JFrame implements WindowListener{
 		setJMenuBar(menuBar);
 		
 		//windows
-		this.console = new Console(400, 300);
+		this.console = new Console(400,400);
 		add(this.console);
-		this.console.setVisible(true);
+		this.console.setVisible(false);
 		this.helpScreen = new HelpScreen();
 		this.add(this.helpScreen);
-		this.helpScreen.setVisible(true);
+		this.helpScreen.setVisible(false);
 		
 	}
 	

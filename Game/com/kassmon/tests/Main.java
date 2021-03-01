@@ -1,6 +1,6 @@
 package com.kassmon.tests;
 
-import com.kassmon.game.src.GameWindow;
+import com.kassmon.game.src.windows.GameWindow;
 
 public class Main {
 

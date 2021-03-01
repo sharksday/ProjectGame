@@ -1,4 +1,4 @@
-package com.kassmon.game.levels;
+package com.kassmon.game.src.levels;
 
 import java.util.ArrayList;
 
